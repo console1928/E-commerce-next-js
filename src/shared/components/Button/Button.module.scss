@@ -1,0 +1,37 @@
+@use '@styles/variables' as styles;
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    padding-left: styles.$space-l;
+    padding-right: styles.$space-l;
+    border: none;
+    background-color: styles.$brand;
+    color: styles.$button-text;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: sans-serif;
+    letter-spacing: 0.035rem;
+
+    &:hover:not(.btn--disabled):not(.btn--loading) {
+        background-color: styles.$brand-hover;
+    }
+
+    &--disabled {
+        background-color: styles.$disabled;
+        cursor: not-allowed;
+    }
+
+    &--loading {
+        cursor: wait;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+}

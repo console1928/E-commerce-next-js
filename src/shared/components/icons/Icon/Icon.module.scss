@@ -1,0 +1,18 @@
+@use '@styles/variables' as styles;
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+
+    &--primary {
+        color: styles.$text-primary;
+    }
+
+    &--secondary {
+        color: styles.$text-secondary;
+    }
+
+    &--accent {
+        color: styles.$text-accent;
+    }
+}

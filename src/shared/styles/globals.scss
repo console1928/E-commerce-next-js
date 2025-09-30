@@ -1,0 +1,44 @@
+:root {
+  background-color: #FAFAFA;
+  font-family: sans-serif;
+}
+
+html, body {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+pre {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #000000;
+}
+
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
