@@ -222,7 +222,7 @@ class ProductsStore {
                 this.error = null;
             });
 
-            const queryParams: any = {
+            const queryParams: { [key: string]: number | string } = {
                 'populate[0]': 'images',
                 'populate[1]': 'productCategory',
                 'pagination[page]': page,
@@ -270,7 +270,7 @@ class ProductsStore {
                 this.isSearching = false;
                 this.isFiltering = false;
             });
-        } catch (err: any) {
+        } catch (err: unknown) {
             runInAction(() => {
                 this.error = err instanceof Error 
                     ? `Failed to load products: ${err.message}`

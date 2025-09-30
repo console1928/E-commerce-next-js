@@ -2,9 +2,7 @@ import React from 'react';
 import Text from '@components/Text';
 import styles from './Products.module.scss';
 
-interface ProductsHeaderProps { }
-
-const ProductsHeader: React.FC<ProductsHeaderProps> = () => {
+const ProductsHeader: React.FC = () => {
     return (
         <div className={styles.info}>
             <Text className={styles.title} color="primary" view="title">

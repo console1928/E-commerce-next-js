@@ -7,7 +7,7 @@ import classNames from 'classnames'
 import Text from '@components/Text'
 import Button from '@components/Button'
 import { cartStore } from '@stores/cart.store'
-import { ProductData, ProductImage } from '@stores/products.store'
+import { ProductData, ProductImage, ProductType } from '@stores/products.store'
 import styles from './Card.module.scss'
 
 export type CardProps = {
@@ -55,7 +55,7 @@ const Card: React.FC<CardProps> = observer(({
         description: productData.subTitle,
         images: productData.images
       }
-      cartStore.addToCart(product as any)
+      cartStore.addToCart(product as ProductType)
     }
   }
 
