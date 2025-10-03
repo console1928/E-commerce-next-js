@@ -4,10 +4,10 @@ import { observer } from 'mobx-react-lite'
 import { useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { productsStore } from '@stores/products.store'
-import ProductsHeader from '@components/Pages/Products/ProductsHeader'
-import ProductsSearch from '@components/Pages/Products/ProductsSearch'
-import ProductsContent from '@components/Pages/Products/ProductsContent'
-import styles from '@components/Pages/Products/Products.module.scss'
+import ProductsHeader from '@pagesLayer/Products/ProductsHeader'
+import ProductsSearch from '@pagesLayer/Products/ProductsSearch'
+import ProductsContent from '@pagesLayer/Products/ProductsContent'
+import styles from '@pagesLayer/Products/Products.module.scss'
 
 const ProductsPage = observer(() => {
   const searchParams = useSearchParams()

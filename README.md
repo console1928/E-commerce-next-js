@@ -24,4 +24,4 @@ yarn build
 
 ## Deploy on Vercel
 
-[https://e-commerce-next-kvijxpspj-consoles-projects-0ca32014.vercel.app/](https://e-commerce-next-kvijxpspj-consoles-projects-0ca32014.vercel.app/)
+[https://e-commerce-next-js-blond.vercel.app/](https://e-commerce-next-js-blond.vercel.app/)

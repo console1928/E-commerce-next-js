@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Text from '@components/Text'
 import Button from '@components/Button'
 import { cartStore } from '@stores/cart.store'
-import styles from '@components/Pages/Cart/Cart.module.scss'
+import styles from '@pagesLayer/Cart/Cart.module.scss'
 
 const CartPage = observer(() => {
   const { items, totalPrice, totalItems, updateQuantity, removeFromCart, clearCart } = cartStore

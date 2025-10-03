@@ -4,12 +4,12 @@ import { observer } from 'mobx-react-lite'
 import { useEffect } from 'react'
 import { useParams } from 'next/navigation'
 import { productStore } from '@stores/product.store'
-import ProductBackButton from '@components/Pages/Product/ProductBackButton'
-import ProductMain from '@components/Pages/Product/ProductMain'
-import ProductRelated from '@components/Pages/Product/ProductRelated'
-import ProductLoading from '@components/Pages/Product/ProductLoading'
-import ProductError from '@components/Pages/Product/ProductError'
-import ProductNotFound from '@components/Pages/Product/ProductNotFound'
+import ProductBackButton from '@pagesLayer/Product/ProductBackButton'
+import ProductMain from '@pagesLayer/Product/ProductMain'
+import ProductRelated from '@pagesLayer/Product/ProductRelated'
+import ProductLoading from '@pagesLayer/Product/ProductLoading'
+import ProductError from '@pagesLayer/Product/ProductError'
+import ProductNotFound from '@pagesLayer/Product/ProductNotFound'
 
 const ProductPage = observer(() => {
   const params = useParams()
